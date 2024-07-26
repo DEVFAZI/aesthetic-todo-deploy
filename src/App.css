@@ -1,0 +1,283 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.container {
+  padding: 50px 30px 30px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #EEEEEE;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.text-box-container {
+  position: relative;
+  display: flex;
+  /* Enable absolute positioning for the button */
+  /* Allow elements to sit next to each other */
+}
+
+.wrapper{
+  position: relative;
+
+}
+
+.text-box-container input {
+  background-color: #fffdfd;
+  box-shadow: 4px -1px 27px 0px rgb(192, 188, 192);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  height: 3.5vh;
+  width: 47vw;
+  /* Stretch input to container width */
+  padding-right: 30px;
+  /* Space for button */
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
+
+.text-box-container input:focus {
+  border: none;
+  outline: none;
+}
+
+.text-box-container input::placeholder {
+  color: rgb(209, 205, 205);
+  font-family: "Montserrat", sans-serif;
+
+}
+
+
+.text-box-container button {
+  font-size: larger;
+  border: none;
+  color: gray;
+  background-color: #d8d3d3;
+  overflow: hidden;
+  box-shadow: 4px -1px 27px 0px rgb(195, 192, 195);
+  position: absolute;
+  /* Position button on top of input */
+  top: 5px;
+  /* Align button to top of input */
+  right: 13px;
+  /* Align button to right of input */
+  padding: 8px 13px 5px 13px;
+  /* Adjust button size and padding */
+  border-radius: 10px;
+  cursor: pointer;
+  /* Indicate clickable button */
+}
+
+.btn {
+  background-color: #918d8d;
+}
+
+.month {
+  color: #B1B4BB;
+}
+
+
+select {
+  font-weight: bolder;
+  color: black;
+  background-color: #fffdfd;
+  box-shadow: 4px -1px 27px 0px rgb(192, 188, 192);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  height: 6vh;
+  width: 11vw;
+  /* Stretch input to container width */
+  padding-right: 30px;
+  /* Space for button */
+  margin-right: 10px;
+}
+
+select:invalid {
+
+  color: rgb(209, 205, 205);
+}
+
+.mainTodo{
+  border-radius: 25px;
+  min-height: 50vh;
+  height: auto;
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  background-color: white;
+  margin: 70px 30px 30px 0px ;
+  padding-bottom: 30px;
+}
+
+.lefticon{
+  /* border: 2px solid black; */
+  width: 35vw;
+}
+
+.Todo{
+  height: auto;
+  width: 70vw;
+  /* border: 2px solid black; */
+  display: flex;
+  padding-top: 40px;
+}
+
+
+
+.catagory p{
+  margin-bottom: 6px;
+  margin-top: 2px;
+  color: #B1B4BB;
+  font-weight: 600;
+  font-size: medium;
+  margin-right: 75px;
+}
+
+
+.blurLine2{
+  width: 30vw;
+  border-color:#ffffff30;
+}
+
+.blurLine1{
+  margin-top: 15.5px;
+  border-color: #ffffff30;
+  padding-bottom: 2px;
+}
+
+.desc p{
+  margin-bottom: 2px;
+  margin-top: 2px;
+  font-weight: 600;
+  font-size: medium;
+  color: black;
+}
+
+.item{
+display: flex;
+justify-content: space-between;
+}
+
+.btnEdit{
+  font-size: larger;
+  border: none;
+  color: gray;
+  background-color: #d8d3d3;
+  overflow: hidden;
+  box-shadow: 4px -1px 27px 0px rgb(195, 192, 195);
+  padding: 4.5px 7px 1.5px 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+svg{
+  pointer-events: none;
+}
+
+.NothinghereText{
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  color: #B1B4BB;
+
+}
+
+select:focus{
+  outline: none;
+}
+
+
+@media only screen and (max-width: 450px) {
+
+  :root{
+    overflow-x: hidden;
+  }
+ .lefticon{
+  display: none;
+ }
+
+input{
+  width: 60vw !important;
+}
+
+ .text-box-container{
+  flex-direction: column;
+  align-items: center;
+ }
+
+ select{
+  width: 40vw;
+  text-align: center;
+  margin-bottom: 20px;
+ }
+
+ .NothinghereText{
+  padding-left: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  color: #B1B4BB;
+  margin-left: 100px;
+}
+
+
+.mainTodo{
+  width: 330px;
+  /* margin: 70px 0px 30px 0px; */
+  margin-left: 8px;
+}
+
+.item{
+  width: 69vw;
+}
+
+.bom2{
+  margin-left: 25px;
+}
+
+.blurLine2{
+  margin-left: 0px;
+  width: 60vw;
+}
+
+.catagory{
+  width: 20vw;
+}
+.desc p ,.catagory p{
+  font-size: xx-small;
+}
+
+.blurLine1{
+  margin-top: 20.5px;
+}
+.container{
+  margin-top: 0px;
+  padding-top: 30px;
+}
+
+.editSvg{
+  width: 10px;
+}
+
+.delSvg{
+  width: 12px;
+}
+
+.btnEdit{
+  border-radius: 8px;
+  padding: 2.5px 6px 0px 6px;
+}
+}

@@ -1,0 +1,13 @@
+
+:root {
+  background-color:#c8c5c5;
+}
+
+@media only screen and (max-width:450px) {
+  :root{
+    background-color: #EEEEEE;
+    margin:0;
+    padding: 0;
+  }
+  
+}

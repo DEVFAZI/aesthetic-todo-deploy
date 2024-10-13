@@ -22,19 +22,12 @@ function App() {
   const [todos, settodos] = useState([])
   
   let c = document.getElementById("Input")
+  let asas =  document.getElementById("catagory")
   
   function handleAdd(){
+   
 
-    if(c.value == ""){
-      toast.error("Add Something",{
-        style:{
-          fontFamily: "Montserrat",
-          fontWeight:"bold"
-        }
-      })
-
-    }
-    else{
+      if(c.value != "" && asas.value != "aa"){
       settodo({
         id: uuidv4(),
         cat: slRef.current.value,
@@ -47,9 +40,16 @@ function App() {
       
       let b =  document.getElementById("catagory")
       c.value = ''
-      b.value = ''
+      b.value = 'aa'
       
-  
+    }
+    else{
+      toast.error("Add Something",{
+        style:{
+          fontFamily: "Montserrat",
+          fontWeight:"bold"
+        }
+      })
     }
       }
 
@@ -131,7 +131,7 @@ function App() {
       </div>
       <div class="text-box-container">
       <select onChange={handleChangeSel} ref={slRef} id='catagory' required>
-  <option value="" disabled selected>Catogary</option>
+  <option value="aa" disabled selected>Catogary</option>
   <option value="Fitness">Fitness</option>
   <option value="Work">Work</option>
   <option value="Personal">Personal</option>
